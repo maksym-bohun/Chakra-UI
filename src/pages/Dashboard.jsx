@@ -1,34 +1,22 @@
-import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid } from "@chakra-ui/react";
 
 export default function Dashboard() {
-  const boxStyles = {
-    p: "10px",
-    bg: "purple.400",
-    color: "white",
-    m: "10px",
-    textAlign: "center",
-    filter: "blur(0.5px)",
-    ":hover": {
-      color: "black",
-      bg: "blue.200",
-    },
-  };
-
   return (
-    <Container as="main" maxW="4xl">
-      <Heading my="30px" p="10px">
-        Chakra UI Components
-      </Heading>
-      <Text ml="30px" color="blue" fontWeight="bold">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio,
-        voluptatibus.
-      </Text>
+    <SimpleGrid spacing={10} minChildWidth="250px" p="20px">
+      <Box bg="white" height="200px" border="1px solid"></Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
 
-      <Box my="30px" p="20px" bg="orange.300">
-        <Text color="white">This is a box!</Text>
-      </Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
 
-      <Box sx={boxStyles}>Hello!!</Box>
-    </Container>
+      <Box bg="white" height="200px" border="1px solid"></Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
+      <Box bg="white" height="200px" border="1px solid"></Box>
+    </SimpleGrid>
   );
 }
