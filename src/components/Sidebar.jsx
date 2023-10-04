@@ -7,7 +7,6 @@ const Sidebar = () => {
     <List color="white" fontSize="1.2rem" spacing={5}>
       <ListItem>
         <NavLink to="/">
-          {" "}
           <ListIcon as={CalendarIcon} /> Dashboard
         </NavLink>
       </ListItem>
@@ -20,7 +19,6 @@ const Sidebar = () => {
 
       <ListItem>
         <NavLink to="/profile">
-          {" "}
           <ListIcon as={AtSignIcon} />
           Profile
         </NavLink>
